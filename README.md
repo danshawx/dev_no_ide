@@ -13,6 +13,9 @@ make
 
 ```
 
+# Tool
+
+
 
 # Other
 
@@ -24,4 +27,6 @@ set_target_properties add -Wl,--no-warn-rwx-segments
 ```
 
 # Reference
-https://kxygk.github.io/bluepill/
+- https://kxygk.github.io/bluepill/
+- Kconfig: Zephyr
+
