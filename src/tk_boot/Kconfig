@@ -1,0 +1,26 @@
+
+menuconfig BOOTLOADER
+	bool "BOOTLOADER"
+	help
+	  Enable BOOTLOADER configuration.
+
+if BOOTLOADER
+
+config BOOT_F1
+	bool "BOOT_F1"
+    default n
+	help
+	  This option enables BOOT_F1.
+
+config BOOT_F2
+	bool "BOOT_F2"
+    default n
+	help
+	  This option enables BOOT_F2.
+
+
+module = BOOTLOADER
+module-str = BOOTLOADER
+
+
+endif # BOOTLOADER

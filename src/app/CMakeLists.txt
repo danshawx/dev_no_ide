@@ -7,5 +7,5 @@
 
 target_sources(${ELF} PRIVATE
 	       ${CMAKE_CURRENT_SOURCE_DIR}/led.c
-	       ${CMAKE_CURRENT_SOURCE_DIR}/stm32g0xx_it.c
+		   ${CMAKE_CURRENT_SOURCE_DIR}/system_stm32g4xx.c
 )

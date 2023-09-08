@@ -16,3 +16,6 @@ set(CMAKE_SIZE arm-none-eabi-size)
 set(CMAKE_DEBUGGER arm-none-eabi-gdb)
 set(CMAKE_DEBUGGER arm-none-eabi-gdb)
 set(CMAKE_CPPFILT arm-none-eabi-c++filt)
+
+find_package(Python3 ${PYTHON_MINIMUM_REQUIRED} REQUIRED ${PYTHON_EXACT})
+set(PYTHON_EXECUTABLE ${Python3_EXECUTABLE})

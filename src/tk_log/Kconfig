@@ -1,0 +1,13 @@
+
+menuconfig TK_LOG
+	bool "TK_LOG"
+	help
+	  Enable TK_LOG configuration.
+
+if TK_LOG
+
+module = TK_LOG
+module-str = TK_LOG
+
+
+endif # TK_LOG
