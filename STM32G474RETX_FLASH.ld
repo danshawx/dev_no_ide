@@ -82,6 +82,28 @@ SECTIONS
     . = ALIGN(4);
     *(.rodata)         /* .rodata sections (constants, strings, etc.) */
     *(.rodata*)        /* .rodata* sections (constants, strings, etc.) */
+
+    __init_start = .;
+
+    __init_EARLY_start = .;
+      KEEP(*(SORT(.init_EARLY[0-9]_*)));
+      KEEP(*(SORT(.init_EARLY[1-9][0-9]_*)));
+
+    __init_PRE_KERNEL_1_start = .;
+      KEEP(*(SORT(.init_PRE_KERNEL_1[0-9]_*)));
+      KEEP(*(SORT(.init_PRE_KERNEL_1[1-9][0-9]_*)));
+
+    __init_POST_KERNEL_start = .;
+      KEEP(*(SORT(.init_POST_KERNEL[0-9]_*)));
+      KEEP(*(SORT(.init_POST_KERNEL[1-9][0-9]_*)));
+
+    __init_APP_start = .;
+      KEEP(*(SORT(.init_APP[0-9]_*)));
+      KEEP(*(SORT(.init_APP[1-9][0-9]_*)));
+
+    __init_end = .;
+
+      
     . = ALIGN(4);
   } >FLASH
 

@@ -2,7 +2,7 @@
 # Compile
 
 ```
-cmake -DCMAKE_TOOLCHAIN_FILE=D:\xd\work\software\github\dev_no_ide\toolchain.cmake D:\xd\work\software\github\dev_no_ide -G "MinGW Makefiles" -D "CMAKE_MAKE_PROGRAM:PATH=C:/MinGW/bin/make.exe" 
+cmake -DCMAKE_TOOLCHAIN_FILE=C:\d_partition\xd\work\software\github\dev_no_ide\toolchain.cmake C:\d_partition\xd\work\software\github\dev_no_ide -G "MinGW Makefiles" -D "CMAKE_MAKE_PROGRAM:PATH=C:/MinGW/bin/make.exe" 
 
 make
 ```

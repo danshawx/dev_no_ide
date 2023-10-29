@@ -3,6 +3,7 @@
         "*.cmake": "cmake",
         "cstdint": "cpp",
         "type_traits": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "stdint.h": "c"
     }
 }

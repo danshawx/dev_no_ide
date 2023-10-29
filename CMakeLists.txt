@@ -23,6 +23,7 @@ add_subdirectory(stm32g4_ll)
 add_subdirectory(src/app)
 add_subdirectory(src/driver)
 add_subdirectory(src/kernel)
+add_subdirectory(src/service)
 
 add_subdirectory_ifdef(CONFIG_BOOTLOADER ${CMAKE_CURRENT_SOURCE_DIR}/src/tk_boot)
 add_subdirectory_ifdef(CONFIG_TK_LOG ${CMAKE_CURRENT_SOURCE_DIR}/src/tk_log)
@@ -39,7 +40,8 @@ target_include_directories(${ELF}
   src/app
   src/driver
   src/kernel
-  srec/tool_chain
+  src/service
+  src/tool_chain
   stm32g4_ll/inc)
 
 target_include_directories_ifdef(CONFIG_BOOTLOADER
